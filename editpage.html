@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>CHỈNH SỬA THÔNG TIN</title>
+</head>
+
+<body>
+    <div class="content">
+        <form action="editpage.html" method="post"> 
+            <div class="row">
+                <div class="maintitle">CHỈNH SỬA THÔNG TIN SINH VIÊN</div>
+                <hr>
+            </div>
+            <div class="row">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-3">
+                                <div class="center">    
+                                    <img src=""id="student-portrait">
+                                    <input type="file" id="upload-image" accept="image/*">
+                                </div>
+                                <div class="center">
+                                    <span class="normalText">
+                                        <label for="student-id" class="info-label">MSSV:</label>
+                                        <input type="text" name="student-id" minlength="8" maxlength="8" id="phamvananh_mssv_edit">
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="col-md-4">
+                                <span class="normalText">
+                                    <label for="fullname" class="info-label">Họ và tên : </label>
+                                    <input type="text" name="fullname" id="phamvananh_ten_edit" style="width: 230px;">
+                                    <br>
+    
+                                    <label for="year-in" class="info-label">Năm vào trường : </label>
+                                    <select name="education-level" id="phamvananh_namvao_edit">
+                                        <option value="" style="font-weight: bold;">--Chọn--</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                    </select>
+                                    <br>
+    
+                                    <label for="education-level" class="info-label">Bậc đào tạo: </label>
+                                    <select name="education-level" id="phamvananh_bacdaotao_edit">
+                                        <option value="" style="font-weight: bold;">--Chọn--</option>
+                                        <option value="KSCQ">KSCQ</option>
+                                        <option value="KSTN">KSTN</option>
+                                        <option value="KSCLC-TN-TT-VN-ICT">KSCLC-TN-TT-VN-ICT</option>
+                                        <option value="KSQT">KSQT</option>
+                                        <option value="CN-TS">CN-TS</option>
+                                    </select>
+                                    <br>
+    
+                                    <label for="training-program" class="info-label">Chương trình: </label>
+                                    <input type="text" name="training-program" id="phamvananh_chuongtrinh_edit"  style="width: 280px;">
+                                    <br>
+    
+                                    <label for="management" class="info-label">Khoa/Viện quản lý: </label>
+                                    <select name="management" id="phamvananh_khoaquanly_edit" >
+                                        <option value="" style="font-weight: bold;">--Chọn--</option>                                      
+                                        <option value="Trường Cơ khí">
+                                            Trường Cơ khí
+                                        </option>
+                                        <option value="Viện Công nghệ Sinh học và Công nghệ Thực phẩm">
+                                            Viện Công nghệ Sinh học và Công nghệ Thực phẩm
+                                        </option>
+                                        <option value="Trường Công nghệ Thông tin và Truyền thông">
+                                            Trường Công nghệ Thông tin và Truyền thông
+                                        </option>
+                                        <option value="Viện Dệt may - Da giầy và Thời trang">
+                                            Viện Dệt may - Da giầy và Thời trang
+                                        </option>
+                                        <option value="Viện Khoa học và Công nghệ Môi trường">
+                                            Viện Khoa học và Công nghệ Môi trường
+                                        </option>
+                                        <option value="Viện Khoa học và Kỹ thuật Vật liệu">
+                                            Viện Khoa học và Kỹ thuật Vật liệu
+                                        </option>
+                                        <option value="Viện Kinh tế và Quản lý">
+                                            Viện Kinh tế và Quản lý
+                                        </option>
+                                        <option value="Viện Kỹ thuật Hóa học">
+                                            Viện Kỹ thuật Hóa học
+                                        </option>
+                                        <option value="Viện Ngoại ngữ">
+                                            Viện Ngoại ngữ
+                                        </option>
+                                        <option value="Viện Sư phạm Kỹ thuật">
+                                            Viện Sư phạm Kỹ thuật
+                                        </option>
+                                        <option value="Viện Toán ứng dụng và Tin học">
+                                            Viện Toán ứng dụng và Tin học
+                                        </option>
+                                        <option value="Viện Vật lý Kỹ thuật">
+                                            Viện Vật lý Kỹ thuật
+                                        </option>
+                                        <option value="Trường Điện - Điện tử">
+                                            Trường Điện - Điện tử
+                                        </option>
+                                    </select>
+                                    <br>
+    
+                                    <label for="learning-status" class="info-label">Tình trạng học tập: </label>
+                                    <select name="learning-status" id="phamvananh_tthoctap_edit">
+                                        <option value="" style="font-weight: bold;">--Chọn--</option>
+                                        <option value="Học">Học</option>
+                                        <option value="Đã tốt nghiệp">Đã tốt nghiệp</option>
+                                        <option value="Thôi học">Thôi học</option>
+                                    </select>
+                                    <br>
+                                </span>
+                            </td>
+                            <td class="col-md-4">
+                                <span class="normalText">
+                                    <label for="gender" class="info-label">Giới tính: </label>
+                                    <select name="gender" id="phamvananh_gioitinh_edit">
+                                        <option value="" style="font-weight: bold;" >--Chọn--</option>
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                        <option value="Khác">Khác</option>
+                                    </select>
+                                    <br>
+
+                                    <label for="class" class="info-label">Lớp: </label>
+                                    <input type="text" name="class" id="phamvananh_lop_edit"  style="width: 280px;">
+                                    <br>
+                                    
+                                    
+                                    <label for="num-course" class="info-label">Khóa học: </label>
+                                    <select name="num-course" id="phamvananh_khoahoc_edit">
+                                        <option value="" style="font-weight: bold;">--Chọn--</option>
+                                        <option value="59">59</option>
+                                        <option value="60">60</option>
+                                        <option value="61">61</option>
+                                        <option value="62">62</option>
+                                        <option value="63">63</option>
+                                        <option value="64">64</option>
+                                        <option value="65">65</option>
+                                        <option value="66">66</option>
+                                        <option value="67">67</option>
+                                        <option value="68">68</option>
+                                        <option value="69">69</option>
+                                    </select>
+                                    <br>
+    
+                                    <label for="student-email" class="info-label">Email: </label>
+                                    <input type="email" name="student-email" id="phamvananh_email_edit" style="width: 230px;">
+                                    <br>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </div>
+            <div class="button">
+                <button id="okButton">OK</button>
+                <button id="cancelButton">Cancel</button>
+                <button id="resetButton">Reset</button>
+            </div>
+    
+        </form>
+    </div>
+
+    <script src="./assets/js/edit.js"></script>
+</body>
+
+</html>
